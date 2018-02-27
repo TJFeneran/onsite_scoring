@@ -120,7 +120,6 @@ function do_settings() {
 	$('#sidebar_logo').html("<img src='/images/logos/"+global.eventid+".png'>").fadeIn();
 	$('#disp_judge').text(global.position);
 	$('#sidebar_dispdate').text($('#select_city option:selected').text() + " - " + $('#select_judge option:selected').text());
-	get_sidebar_module("routines");
 	
 	setTimeout(function(){
 		get_scoring_breakdown();
